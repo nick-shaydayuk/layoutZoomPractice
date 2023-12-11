@@ -5,6 +5,115 @@ html {
 body {
   height: 100%;
   margin: 0;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  /* width: calc(100% - 240px); */
+  /* margin-left: 240px; */
+  height: 64px;
+  background: #fff;
+  box-shadow: 0px 4px 5px 0px #e9edf3;
+}
+
+.header__analytics {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+
+.header__profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__name-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.header__avatar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__date-text {
+  color: #899cb1;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.header__analytics-text {
+  color: #122945;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.header__analytics-text--green {
+  color: #00a775;
+}
+
+.header__analytics-text--yellow {
+  color: #ffb800;
+}
+
+.header__analytics-text--red {
+  color: #ea1a4f;
+}
+
+.header__analytics-progressbar {
+  width: 156px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #dee6f5;
+}
+
+.header__analytics-progressbar-filled--green {
+  width: 68px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 12px 0px 0px 12px;
+  background: #28a879;
+}
+
+.header__analytics-progressbar-filled--yellow {
+  width: 67px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 12px 0px 0px 12px;
+  background: #ffd500;
+}
+
+.header__analytics-progressbar-filled--red {
+  width: 78px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 12px 0px 0px 12px;
+  background: #ea1a4f;
+}
+
+.header__name-dropdown {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.header__avatar-dropdown {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .main {
@@ -19,6 +128,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
+  display: none;
 }
 
 .sidebar__logo {
