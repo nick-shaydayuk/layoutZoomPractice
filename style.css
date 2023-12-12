@@ -38,15 +38,22 @@ body {
   flex-direction: row;
 }
 
+.header__profile-search {
+  margin: 0 56px 0 190px;
+}
+
 .header__name-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
   gap: 4px;
 }
 
 .header__avatar-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .header__date-text {
@@ -116,6 +123,16 @@ body {
   flex-shrink: 0;
   border-radius: 12px 0px 0px 12px;
   background: #ea1a4f;
+}
+
+.header__name {
+  color:#899cb1;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 21px */
 }
 
 .header__name-dropdown {
