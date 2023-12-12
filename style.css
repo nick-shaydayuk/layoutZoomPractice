@@ -257,6 +257,7 @@ body {
   margin-top: 64px;
   width: calc(100% - 240px);
   background: #f1f4f9;
+  padding-right: 120px;
 }
 
 .utilities {
@@ -301,15 +302,23 @@ body {
   border: none;
   width: 24px;
   height: 24px;
+  padding: 0;
 }
 
 .utilities__calendar {
   display: flex;
+  width: 115px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .utilities__calendar-text-container {
   display: flex;
   align-items: center;
+  height: 100%;
+  gap: 8px;
 }
 
 .utilities__calendar-text {
@@ -322,5 +331,23 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 114.286% */
+  line-height: 16px;
+}
+
+.utilities__calendar-left {
+  height: 24px;
+}
+
+.utilities__calendar-right {
+  height: 24px;
+}
+
+.utilities__calendar-left-icon {
+  width: 17px;
+  height: 24px;
+}
+
+.utilities__calendar-right-icon {
+  width: 17px;
+  height: 24px;
 }
