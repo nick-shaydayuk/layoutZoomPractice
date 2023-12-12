@@ -11,16 +11,16 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
-  width: 100%;
-  /* width: calc(100% - 240px); */
-  /* margin-left: 240px; */
+  /* width: 100%; */
+  width: calc(100% - 240px);
+  margin-left: 240px;
   height: 64px;
   background: #fff;
   box-shadow: 0px 4px 5px 0px #e9edf3;
-  padding: 14px 0 16px;
+  padding: 14px 114px 16px 0;
   box-sizing: border-box;
 }
 .header__date {
@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 4px;
 }
 
 .header__date-text {
@@ -126,7 +127,7 @@ body {
 }
 
 .header__name {
-  color:#899cb1;
+  color: #899cb1;
   text-align: right;
   font-family: sans-serif;
   font-size: 15px;
@@ -159,7 +160,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  display: none;
 }
 
 .sidebar__logo {
@@ -245,4 +245,82 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 148%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main-container {
+  margin-top: 64px;
+  width: calc(100% - 240px);
+  background: #f1f4f9;
+}
+
+.utilities {
+  margin-top: 20px;
+  margin-left: auto;
+  width: 308px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+}
+
+.utilities__balance {
+  display: flex;
+  width: 145px;
+  height: 40px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background: #fff;
+}
+
+.utilities__balance-text {
+  color: #899cb1;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.utilities__balance-text--black {
+  color: #122945;
+}
+
+.utilities__balance-button {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.utilities__calendar {
+  display: flex;
+}
+
+.utilities__calendar-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.utilities__calendar-text {
+  margin: 0;
+  display: inline-block;
+  min-width: 34px;
+  color: #005ff8;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
 }
