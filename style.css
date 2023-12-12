@@ -266,13 +266,13 @@ body {
   width: 308px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 48px;
 }
 
 .utilities__balance {
   display: flex;
-  width: 145px;
   height: 40px;
   padding: 8px 12px;
   justify-content: center;
@@ -307,7 +307,6 @@ body {
 
 .utilities__calendar {
   display: flex;
-  width: 115px;
   height: 24px;
   justify-content: center;
   align-items: center;
@@ -350,4 +349,60 @@ body {
 .utilities__calendar-right-icon {
   width: 17px;
   height: 24px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 1440px;
+  margin: 0 0 0 auto;
+}
+
+.table__filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.table__filter-text {
+  color: #5e7793;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.table__filter-search {
+  display: flex;
+  height: 48px;
+  padding: 14px 0 14px 0px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.table__filters-container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.table__filter {
+  display: flex;
+  flex-direction: row;
+  display: inline-flex;
+  align-items: center;
+}
+
+.table__container {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 5px 0px #e9edf3;
+  display: inline-flex;
+  padding: 24px 0px 57px 0px;
+  flex-direction: column;
+  align-items: center;
 }
